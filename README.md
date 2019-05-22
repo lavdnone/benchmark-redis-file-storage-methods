@@ -23,6 +23,23 @@ sorted set:
 - rea1_zadd      11.61833
 - del_zadd       0.0065
 
+# VM Centos 7.6
+keys:
+- write_setrange 38.05548
+- read_setrange  21.5849
+- del_setrange   0.0115
+
+hash:
+- write_hset     37.69397
+- read_hset      28.85869
+- del_hset       0.01855
+
+sorted set:
+- write_zadd     57.97613
+- rea1_zadd      22.64661
+- del_zadd       0.01304
+
+
 # through dynomite cluster
 - 3 node dynomite cluster: https://github.com/Netflix/dynomite
 - added latency for nodes: tc qdisc add dev eth0 root netem delay 2ms 1ms
