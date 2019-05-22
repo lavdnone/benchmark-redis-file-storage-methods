@@ -29,19 +29,19 @@ sorted set:
 - redis port used 8397
 
 keys:
-- write_setrange 67.04628
-- read_setrange  35.55513
-- del_setrange   0.01458
+- write_setrange 171.03115
+- read_setrange  42.67535
+- del_setrange   0.06957
 
 hash:
-- write_hset     67.40508
-- read_hset      111.13444
-- del_hset       0.01591
+- write_hset     159.63332
+- read_hset      113.46556
+- del_hset       0.03107
 
 sorted set:
-- write_zadd     83.50987
-- rea1_zadd      37.39342
-- del_zadd       0.01685
+- write_zadd     184.72535
+- rea1_zadd      41.27067
+- del_zadd       0.03111
 
 # startup
 - docker run --name redis -p 0.0.0.0:6379:6379 -v ~/redis:/data -d redis:5-alpine
